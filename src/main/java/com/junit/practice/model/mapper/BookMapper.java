@@ -14,6 +14,8 @@ public class BookMapper {
     public BookEntity bookRequestDTO2Entity(BookRequestDTO dto){
         BookEntity ent = new BookEntity();
         ent.setName(dto.getName());
+        ent.setSummary(dto.getSummary());
+        ent.setRating(dto.getRating());
         return ent;
     }
 
@@ -22,6 +24,8 @@ public class BookMapper {
         return BookResponseDTO.builder()
                 .id(ent.getId())
                 .name(ent.getName())
+                .summary(ent.getSummary())
+                .rating(ent.getRating())
                 .build();
     }
 

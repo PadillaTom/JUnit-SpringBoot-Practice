@@ -11,4 +11,6 @@ public class BookResponseDTO {
 
     private Long id;
     private String name;
+    private String summary;
+    private int rating;
 }

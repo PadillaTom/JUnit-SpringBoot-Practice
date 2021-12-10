@@ -10,4 +10,6 @@ import lombok.Setter;
 public class BookRequestDTO {
 
     private String name;
+    private String summary;
+    private int rating;
 }
