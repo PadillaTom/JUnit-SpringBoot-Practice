@@ -10,6 +10,4 @@ public class PracticeApplication {
 		SpringApplication.run(PracticeApplication.class, args);
 	}
 
-	// Develop
-
 }
