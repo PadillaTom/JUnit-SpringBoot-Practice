@@ -1,6 +1,8 @@
 package com.junit.practice.model.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,6 +11,8 @@ import javax.persistence.Id;
 
 @Entity
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class BookEntity {
 
     @Id
@@ -20,4 +24,6 @@ public class BookEntity {
     private String summary;
 
     private int rating;
+
+
 }
